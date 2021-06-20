@@ -26,57 +26,65 @@
   </head>
   <body class="p-4">
     <main
-      class="flex flex-col mx-auto rounded-lg  bg-desaturated-blue desktop:flex-row"
+      class="flex flex-col mx-auto overflow-hidden rounded-lg  desktop:flex-row-reverse bg-desaturated-blue"
     >
-      <picture class="rounded-t-lg bg-soft-violet">
-        <source
-          srcset="images/image-header-desktop.jpg"
-          media="(min-width: 375px)"
-        />
-        <img
-          class="rounded-t-lg mix-blend-overlay"
-          src="images/image-header-mobile.jpg"
-          alt="people at computers"
-        />
-      </picture>
-      <div>
-        <div>
-          <section class="px-8 py-8 text-center font-Inter">
-            <h2 class="mb-4 text-3xl font-bold text-white">
-              Get <span class="text-soft-violet">insights</span> that help your
-              business grow.
-            </h2>
-            <p
-              class="text-base font-normal leading-7 tracking-wide  text-transparent-white-50"
+      <div class="flex-1 bg-soft-violet">
+        <picture>
+          <source
+            srcset="images/image-header-desktop.jpg"
+            media="(min-width: 375px)"
+          />
+          <img
+            class="object-cover w-full h-full mix-blend-overlay"
+            src="images/image-header-mobile.jpg"
+            alt="people at computers"
+          />
+        </picture>
+      </div>
+      <div class="flex flex-col justify-around flex-1 p-10">
+        <section class="mb-10 text-center desktop:text-left font-Inter">
+          <h2 class="mb-4 text-2xl font-bold text-white">
+            Get <span class="text-soft-violet">insights</span> that help your
+            business grow.
+          </h2>
+          <p
+            class="text-base font-normal leading-7 tracking-wide  text-transparent-white-50"
+          >
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+        </section>
+        <section
+          class="flex flex-col items-center  desktop:justify-between desktop:flex-row desktop:items-baseline font-Inter"
+        >
+          <div class="flex flex-col items-center mb-4 desktop:items-start">
+            <span class="mb-1 text-2xl font-bold text-white font-Inter"
+              >10k+</span
             >
-              Discover the benefits of data analytics and make better decisions
-              regarding revenue, customer experience, and overall efficiency.
-            </p>
-          </section>
-          <section class="flex flex-col items-center pb-10 font-Inter">
-            <div class="flex flex-col items-center mb-4">
-              <span class="mb-1 text-2xl text-white">10k+</span>
-              <span
-                class="text-xs tracking-wider uppercase  text-transparent-white-100"
-                >companies</span
-              >
-            </div>
-            <div class="flex flex-col items-center mb-4">
-              <span class="mb-1 text-2xl text-white">314</span>
-              <span
-                class="text-xs tracking-wider uppercase  text-transparent-white-100"
-                >templates</span
-              >
-            </div>
-            <div class="flex flex-col items-center">
-              <span class="mb-1 text-2xl text-white">12M+</span>
-              <span
-                class="text-xs tracking-wider uppercase  text-transparent-white-100"
-                >queries</span
-              >
-            </div>
-          </section>
-        </div>
+            <span
+              class="text-xs tracking-wider uppercase  text-transparent-white-100"
+              >companies</span
+            >
+          </div>
+          <div class="flex flex-col items-center mb-4 desktop:items-start">
+            <span class="mb-1 text-2xl font-bold text-white font-Inter"
+              >314</span
+            >
+            <span
+              class="text-xs tracking-wider uppercase  text-transparent-white-100"
+              >templates</span
+            >
+          </div>
+          <div class="flex flex-col items-center desktop:items-start">
+            <span class="mb-1 text-2xl font-bold text-white font-Inter"
+              >12M+</span
+            >
+            <span
+              class="text-xs tracking-wider uppercase  text-transparent-white-100"
+              >queries</span
+            >
+          </div>
+        </section>
       </div>
     </main>
     <div class="text-xs text-white">
