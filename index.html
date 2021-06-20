@@ -1,33 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
+  <body class="p-4">
+    <main
+      class="flex flex-col mx-auto rounded-lg  bg-desaturated-blue desktop:flex-row"
+    >
+      <picture class="rounded-t-lg bg-soft-violet">
+        <source
+          srcset="images/image-header-desktop.jpg"
+          media="(min-width: 375px)"
+        />
+        <img
+          class="rounded-t-lg mix-blend-overlay"
+          src="images/image-header-mobile.jpg"
+          alt="people at computers"
+        />
+      </picture>
+      <div>
+        <div>
+          <section class="px-8 py-8 text-center font-Inter">
+            <h2 class="mb-4 text-3xl font-bold text-white">
+              Get <span class="text-soft-violet">insights</span> that help your
+              business grow.
+            </h2>
+            <p
+              class="text-base font-normal leading-7 tracking-wide  text-transparent-white-50"
+            >
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency.
+            </p>
+          </section>
+          <section class="flex flex-col items-center pb-10 font-Inter">
+            <div class="flex flex-col items-center mb-4">
+              <span class="mb-1 text-2xl text-white">10k+</span>
+              <span
+                class="text-xs tracking-wider uppercase  text-transparent-white-100"
+                >companies</span
+              >
+            </div>
+            <div class="flex flex-col items-center mb-4">
+              <span class="mb-1 text-2xl text-white">314</span>
+              <span
+                class="text-xs tracking-wider uppercase  text-transparent-white-100"
+                >templates</span
+              >
+            </div>
+            <div class="flex flex-col items-center">
+              <span class="mb-1 text-2xl text-white">12M+</span>
+              <span
+                class="text-xs tracking-wider uppercase  text-transparent-white-100"
+                >queries</span
+              >
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <div class="text-xs text-white">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
