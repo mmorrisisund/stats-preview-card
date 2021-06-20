@@ -4,7 +4,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
-      desktop: { min: '375px', max: '1440px' },
+      desktop: { min: '375px' },
     },
     extend: {
       colors: {
