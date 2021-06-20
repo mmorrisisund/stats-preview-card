@@ -767,6 +767,10 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -1487,6 +1491,11 @@ video {
 .bg-soft-violet {
   --tw-bg-opacity: 1;
   background-color: hsla(277, 64%, 61%, var(--tw-bg-opacity));
+}
+
+.bg-very-dark-blue {
+  --tw-bg-opacity: 1;
+  background-color: hsla(233, 47%, 7%, var(--tw-bg-opacity));
 }
 
 .decoration-slice {
